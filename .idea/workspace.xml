@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Ai stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/controller/ProductControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
   "keyToString": {
     "Application.Farm2TableApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "AI",
+    "git-widget-placeholder": "Models",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/nasir/OneDrive/Desktop/DevShop/CD-InternTracker"
@@ -131,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742419157613</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ai stuff">
+      <option name="closed" value="true" />
+      <created>1742507543759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742507543759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,8 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made Project" />
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Folder Configuration" />
+    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Ai stuff" />
     <option name="LAST_COMMIT_MESSAGE" value="Ai stuff" />
   </component>
