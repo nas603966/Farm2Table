@@ -4,35 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Made Project">
+    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Ai stuff">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2uSfbZv4TlfIAA1EcA5z1TK3BAY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasir/OneDrive/Desktop/DevShop/Farm2Table&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Farm2TableApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "AI",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nasir/OneDrive/Desktop/DevShop/CD-InternTracker"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nasir\OneDrive\Desktop\DevShop\Farm2Table\src\main\java\com\farm2table" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Farm2TableApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.farm2table.Farm2TableApplication" />
+      <module name="Farm2Table" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.farm2table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Farm2TableApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +107,31 @@
       <option name="project" value="LOCAL" />
       <updated>1742247360682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1742247778036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742247778036</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Folder Configuration">
+      <option name="closed" value="true" />
+      <created>1742333331387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742333331387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ai stuff">
+      <option name="closed" value="true" />
+      <created>1742419157612</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742419157613</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +147,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Project" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Folder Configuration" />
+    <MESSAGE value="Ai stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ai stuff" />
   </component>
 </project>
