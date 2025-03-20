@@ -15,7 +15,7 @@ public class DynamicPricingService {
         int totalDemand = demand.stream().mapToInt(Integer::intValue).sum();
 
         double demandFactor = (double) totalDemand / demand.size();
-        double priceAdjustment = 0.05 * demandFactor; // 5% price adjustment based on demand
+        double priceAdjustment = 0.05 * demandFactor;
         return avgPrice + priceAdjustment;
     }
 }
