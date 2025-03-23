@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Finished Models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
   "keyToString": {
     "Application.Farm2TableApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Services",
+    "git-widget-placeholder": "Controllers",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/nasir/OneDrive/Desktop/DevShop/CD-InternTracker"
