@@ -49,6 +49,10 @@ public class RecommendationService {
         productSimilarity.computeIfAbsent(productId, k -> new ArrayList<>()).addAll(similarProducts);
     }
 
+    public List<Long> getUserPurchaseHistory(Long userId) {
+        return userPurchaseHistory.getOrDefault(userId, new ArrayList<>());
+    }
+
     private List<Long> getPopularProducts(int limit) {
         List<Long> popularProducts = List.of(101L, 102L, 103L, 104L, 105L);
         return popularProducts.stream().limit(limit).toList();

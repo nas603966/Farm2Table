@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Finished Models">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/Conversation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/repository/ConversationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/ConversationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/ConversationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/service/MessageServiceTest.java" afterDir="false" />
+    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Finished Tests and More Models, Repositories, and Services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/RecommendationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/DynamicPricingServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/FraudDetectionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/RecommendationServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/farm2table/controller/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/controller/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/FraudDetectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/FraudDetectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/farm2table/service/MessageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/service/MessageServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Farm2TableApplication.executor": "Run",
+    "JUnit.DynamicPricingServiceTest.executor": "Run",
+    "JUnit.FraudDetectionServiceTest.executor": "Run",
+    "JUnit.MessageServiceTest.executor": "Run",
     "JUnit.ProductControllerTest.executor": "Run",
+    "JUnit.RecommendationServiceTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Tests",
     "ignore.virus.scanning.warn.message": "true",
@@ -66,16 +67,48 @@
       <recent name="C:\Users\nasir\OneDrive\Desktop\DevShop\Farm2Table\src\main\java\com\farm2table" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest">
-    <configuration name="Farm2TableApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.farm2table.Farm2TableApplication" />
+  <component name="RunManager" selected="JUnit.MessageServiceTest">
+    <configuration name="DynamicPricingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Farm2Table" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.farm2table.*" />
+          <option name="PATTERN" value="com.farm2table.ai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.farm2table.ai" />
+      <option name="MAIN_CLASS_NAME" value="com.farm2table.ai.DynamicPricingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudDetectionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Farm2Table" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.farm2table.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.farm2table.ai" />
+      <option name="MAIN_CLASS_NAME" value="com.farm2table.ai.FraudDetectionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Farm2Table" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.farm2table.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.farm2table.service" />
+      <option name="MAIN_CLASS_NAME" value="com.farm2table.service.MessageServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,10 +128,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecommendationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Farm2Table" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.farm2table.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.farm2table.ai" />
+      <option name="MAIN_CLASS_NAME" value="com.farm2table.ai.RecommendationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessageServiceTest" />
+        <item itemvalue="JUnit.RecommendationServiceTest" />
+        <item itemvalue="JUnit.FraudDetectionServiceTest" />
+        <item itemvalue="JUnit.DynamicPricingServiceTest" />
         <item itemvalue="JUnit.ProductControllerTest" />
-        <item itemvalue="Application.Farm2TableApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742511443624</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished Tests and More Models, Repositories, and Services">
+      <option name="closed" value="true" />
+      <created>1742763189060</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742763189060</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +246,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Ai stuff" />
     <MESSAGE value="File Addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="File Addition" />
+    <MESSAGE value="Finished Tests and More Models, Repositories, and Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Tests and More Models, Repositories, and Services" />
   </component>
 </project>

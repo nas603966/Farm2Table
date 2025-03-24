@@ -10,5 +10,4 @@ import java.util.List;
 public class FraudRequest {
     private List<Double> transactionAmounts;
     private double newTransaction;
-
 }
