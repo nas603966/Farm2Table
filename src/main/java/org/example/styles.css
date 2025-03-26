@@ -1,18 +1,87 @@
-.nav{
-padding: 2%;
-font-weight: bolder;
-color: black;
-}
-.title{
-color: black;
-text-align:center;
-}
-.members{
-padding: 2%;
-color: black;
-background-color: white;
-border-radius: 5%;
-}
-.table-m{
-border: 3%;
-}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 100;
+        color: black;
+        width: 100%;
+        }
+        .items{
+            padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 10pt;
+        background-color: white;
+
+        font-weight: 600;
+        color: black;
+        margin-left: -1000px;
+        border-width: 0px;
+
+        }
+        .break{
+            height: 1000px;
+            background-image: url('https://e7.pngegg.com/pngimages/943/785/png-clipart-farm-under-cloudy-sky-agriculture-farmer-organic-farming-agribusiness-farm-company-cloud.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+  background-position: center;
+        }
+        .title{
+        color:#043f23;
+        text-align:center;
+        }
+        .title1{
+            color: #fbc02d;
+            text-align:center;
+            font-size: 52pt;
+            padding-top: 200px;
+            }
+            .subtitle{
+                color: white;
+                text-align: center;
+            }
+        .back-T{
+            height: 1000px;
+           background-color:#043f23;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+        }
+        .members{
+            width: 700px;
+            height: 200px;
+        color:#043f23;
+        background-color: white;
+        border-radius: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 10pt;
+        border-radius: 10%;
+        border-width: 2pt;
+        border-style: solid;
+        border-color: #043f23;
+
+        }
+        .table-m{
+        border: 3%;
+        margin-left:35%
+        }
+        .logos{
+            width: 100px;
+            height: 100px;
+        }
+        .division{
+            height: 5px;
+            background-color: #fbc02d;
+            width: 100%;
+        }
