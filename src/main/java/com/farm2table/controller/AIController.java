@@ -26,20 +26,18 @@ public class AIController {
     @Autowired
     private FraudDetectionService fraudService;
 
+    @Operation(summary = "Get optimal price", description = "Calculates and returns an optimal price for the product.")
     @PostMapping("/price")
     public ResponseEntity<?> getOptimalPrice(@RequestBody PriceRequest request) {
-        if (request.getHistoricalPrices() == null || request.getHistoricalPrices().isEmpty()) {
-            return ResponseEntity.badRequest().body("Historical prices cannot be empty or null.");
-        }
-        if (request.getDemand() == null || request.getDemand().isEmpty()) {
-            return ResponseEntity.badRequest().body("Demand data cannot be empty or null.");
+        if (request == null || !request.isValid()) {
+            return ResponseEntity.badRequest().body("Invalid request. Historical prices and demand data cannot be empty.");
         }
 
         double optimalPrice = pricingService.calculateOptimalPrice(request.getHistoricalPrices(), request.getDemand());
         return ResponseEntity.ok(optimalPrice);
     }
 
-    @Operation(summary = "Get product recommendations", description = "Returns product recommendations for the user based on their preferences and past behavior.")
+    @Operation(summary = "Get product recommendations", description = "Returns personalized product recommendations based on user preferences and behavior.")
     @GetMapping("/recommend/{userId}")
     public ResponseEntity<?> getRecommendations(
             @Parameter(description = "User ID to fetch recommendations for") @PathVariable Long userId,
@@ -56,10 +54,10 @@ public class AIController {
         return ResponseEntity.ok(recommendations);
     }
 
-    @Operation(summary = "Check for fraud", description = "Checks if a transaction is fraudulent based on historical transaction data.")
+    @Operation(summary = "Check for fraud", description = "Analyzes a transaction and returns if it's potentially fraudulent.")
     @PostMapping("/fraud")
     public ResponseEntity<?> checkFraud(@RequestBody FraudRequest request) {
-        if (request.getTransactionAmounts() == null || request.getTransactionAmounts().isEmpty() || request.getNewTransaction() <= 0) {
+        if (request == null || !request.isValid()) {
             return ResponseEntity.badRequest().body("Invalid fraud request data.");
         }
 

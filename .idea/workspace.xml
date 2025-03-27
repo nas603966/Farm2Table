@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Finished Tests and More Models, Repositories, and Services">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/RecommendationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/DynamicPricingServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/FraudDetectionServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/ai/RecommendationServiceTest.java" afterDir="false" />
+    <list default="true" id="6f273db0-d651-490d-bd96-45c4eb830e91" name="Changes" comment="Finished Backend For Now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/FraudDetectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/FraudDetectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/RecommendationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/ai/DynamicPricingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/controller/AIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/FraudRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/farm2table/service/MessageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/farm2table/service/MessageServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farm2table/dto/PriceRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="Tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,27 +42,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Farm2TableApplication.executor": "Run",
-    "JUnit.DynamicPricingServiceTest.executor": "Run",
-    "JUnit.FraudDetectionServiceTest.executor": "Run",
-    "JUnit.MessageServiceTest.executor": "Run",
-    "JUnit.ProductControllerTest.executor": "Run",
-    "JUnit.RecommendationServiceTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Tests",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nasir/OneDrive/Desktop/DevShop/CD-InternTracker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Farm2TableApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DynamicPricingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FraudDetectionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecommendationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasir/OneDrive/Desktop/DevShop/CD-InternTracker&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nasir\OneDrive\Desktop\DevShop\Farm2Table\src\main\java\com\farm2table" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessageServiceTest">
+  <component name="RunManager" selected="JUnit.ProductControllerTest">
     <configuration name="DynamicPricingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Farm2Table" />
       <extension name="coverage">
@@ -145,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductControllerTest" />
         <item itemvalue="JUnit.MessageServiceTest" />
         <item itemvalue="JUnit.RecommendationServiceTest" />
         <item itemvalue="JUnit.FraudDetectionServiceTest" />
         <item itemvalue="JUnit.DynamicPricingServiceTest" />
-        <item itemvalue="JUnit.ProductControllerTest" />
       </list>
     </recent_temporary>
   </component>
