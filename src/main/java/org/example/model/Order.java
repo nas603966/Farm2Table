@@ -7,16 +7,20 @@ public class Order {
     private double price;
     private String date;
     private String status;
+    private String trackingNumber;
+    private String carrier;
 
     public Order() {}
 
-    public Order(String orderId, String buyerName, String product, double price, String date, String status) {
+    public Order(String orderId, String buyerName, String product, double price, String date, String status, String trackingNumber, String carrier) {
         this.orderId = orderId;
         this.buyerName = buyerName;
         this.product = product;
         this.price = price;
         this.date = date;
         this.status = status;
+        this.trackingNumber = trackingNumber;
+        this.carrier = carrier;
     }
 
     public String getOrderId() { return orderId; }
@@ -36,4 +40,10 @@ public class Order {
 
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
+
+    public String getTrackingNumber() { return trackingNumber; }
+    public void setTrackingNumber(String trackingNumber) { this.trackingNumber = trackingNumber; }
+
+    public String getCarrier() { return carrier; }
+    public void setCarrier(String carrier) { this.carrier = carrier; }
 }

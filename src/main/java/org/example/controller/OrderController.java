@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.*;
+
 @RestController
 @RequestMapping("/orders")
 @CrossOrigin(origins = "*")
@@ -13,11 +17,11 @@ public class OrderController {
          private List<Order> orders = new ArrayList<>();
 
          public OrderController() {
-             orders.add(new Order("#12406", "John Parks", "Apples x20", 20.00, "3/10/25", "Delivered"));
-             orders.add(new Order("#19247", "Anna Smith", "Wheat x10", 10.00, "3/11/25", "In Transit"));
-             orders.add(new Order("#15562", "Jim Green", "Carrots x15", 15.00, "3/12/25", "Canceled"));
-             orders.add(new Order("#13055", "Jaylen Barry", "Potatoes x5", 5.00, "3/13/25", "Confirmed"));
-             orders.add(new Order("#18324", "Kayla Sims", "Corn x10", 10.00, "3/14/25", "Pending"));
+             orders.add(new Order("#12406", "John Parks", "Apples x20", 20.00, "3/21/25", "Delivered", "1234567890", "usps"));
+             orders.add(new Order("#19247", "John Parks", "Wheat x10", 10.00, "3/22/25", "In Transit", "2468101214", "usps"));
+             orders.add(new Order("#15562", "John Parks", "Carrots x15", 15.00, "3/23/25", "Canceled", "3691215182", "usps" ));
+             orders.add(new Order("#13055", "John Parks", "Potatoes x5", 5.00, "3/24/25", "Confirmed", "4812162024", "usps"));
+             orders.add(new Order("#18324", "John Parks", "Corn x10", 10.00, "3/25/25", "Pending", "5101520253", "usps"));
          }
 
          // Get All Orders
@@ -37,7 +41,7 @@ public class OrderController {
          @PutMapping("/{id}")
          public String updateOrderStatus(@PathVariable String id, @RequestParam String status) {
              for (Order o : orders) {
-                 if (o.getOrderId().equals(id)) {
+                 if (o.getOrderId().replace("#", "").equals(id.replace("#", ""))) {
                      o.setStatus(status);
                      return "Order Status Updated!";
                  }
@@ -48,7 +52,33 @@ public class OrderController {
          // Delete Order
          @DeleteMapping("/{id}")
          public String deleteOrder(@PathVariable String id) {
-             orders.removeIf(o -> o.getOrderId().equals(id));
-             return "Order Deleted!";
+             boolean removed = orders.removeIf(o -> o.getOrderId().replace("#", "").equals(id.replace("#", "")));
+             return removed ? "Order Deleted!" : "Order Not Found!";
          }
+
+
+    @GetMapping("/track/{id}")
+    public String trackOrder(@PathVariable String id) throws Exception {
+        for (Order o : orders) {
+            if (o.getOrderId().equals(id)) {
+                if (o.getTrackingNumber() == null) return "No Tracking Number Found";
+
+                String apiKey = "shippo_test_c733fad602f27bb64dc89efb8f04d7b50c5033ff"; // Replace with my Shippo Test Key
+                URL url = new URL("https://api.goshippo.com/tracks/" + o.getCarrier() + "/" + o.getTrackingNumber() + "/");
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Authorization", "ShippoToken " + apiKey);
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String output;
+                while ((output = in.readLine()) != null) {
+                    response.append(output);
+                }
+                in.close();
+                return response.toString();
+            }
+        }
+        return "Order Not Found!";
+    }
 }
